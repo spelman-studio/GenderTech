@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GenderTech</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-card navbar" id="myNavbar">
+    <a href="index.html#home" class="w3-bar-item w3-button w3-wide logo">GT</a>
+    <!-- Right-sided navbar links -->
+    <div class="navbar w3-right w3-hide-small">
+      <a href="index.html#home" class="w3-bar-item w3-button" :hover>Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Articles 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="info.html#read1" class="w3-bar-item w3-button" style="overflow:hidden;">"Night to His Day": The Social Construction of Gender</a>
+          <a href="info.html#read2" class="w3-bar-item w3-button" style="overflow:hidden;">Girl</a>
+          <a href="info.html#read3" class="w3-bar-item w3-button" style="overflow:hidden;">Just One of the Guys? How Transmen Make Gender Visible at Work</a>
+        </div>
+      </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Videos 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="info.html#vid1" class="w3-bar-item w3-button" style="overflow:hidden;">The Origin of Gender</a>
+        <a href="info.html#vid2" class="w3-bar-item w3-button" style="overflow:hidden;">What We Know About Gender Identity According to Science</a>
+        <a href="info.html#vid3" class="w3-bar-item w3-button" style="overflow:hidden;">Women vs Men, In the workplace</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Games 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="info.html#game1" class="w3-bar-item w3-button" style="overflow:hidden;">Dys4ia</a>
+        <a href="info.html#game2" class="w3-bar-item w3-button" style="overflow:hidden;">The Ideal World</a>
+      </div>
+    </div> 
+    <a href="citations.pdf" class="w3-bar-item w3-button" target="_blank" :hover>Sources</a>
+</div>
+</div>
+</div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">x</a>
+  <a href="index.html#home" class="w3-bar-item w3-button" :hover>Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Articles 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="info.html#read1" class="w3-bar-item w3-button" style="overflow:hidden;">"Night to His Day": The Social Construction of Gender</a>
+          <a href="info.html#read2" class="w3-bar-item w3-button" style="overflow:hidden;">Girl</a>
+          <a href="info.html#read3" class="w3-bar-item w3-button" style="overflow:hidden;">Just One of the Guys? How Transmen Make Gender Visible at Work</a>
+        </div>
+      </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Videos 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="info.html#vid1" class="w3-bar-item w3-button" style="overflow:hidden;">The Origin of Gender</a>
+        <a href="info.html#vid2" class="w3-bar-item w3-button" style="overflow:hidden;">What We Know About Gender Identity According to Science</a>
+        <a href="info.html#vid3" class="w3-bar-item w3-button" style="overflow:hidden;">Women vs Men, In the workplace</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Games 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="info.html#game1" class="w3-bar-item w3-button" style="overflow:hidden;">Dys4ia</a>
+        <a href="info.html#game2" class="w3-bar-item w3-button" style="overflow:hidden;">The Ideal World</a>
+      </div>
+    </div>
+    <a href="citations.pdf" class="w3-bar-item w3-button" target="_blank" :hover>Sources</a>
+    </div>
+  </div> 
+</nav>
+<!-- MAKE RESPONSIVE -->
+<div id="info">
+    <!-- Articles -->
+    <div class="w3-container w3-white w3-center" id="read1" style="padding-top: 5%;">
+      <div class="w3-pink w3-round-xlarge">
+        <h1 class="w3-text-black info-title">Articles</h1>
+      </div>
+        <div class="w3-row">
+            <div class="w3-col s6 w3-center">
+              <h2 class="pink-title">"Night to His Day":<br>
+                The Social Construction of Gender</h2>
+              <h5><a href="https://www.lorber.family/en-gb/judith" target="_blank">Judith Lorber</a></h5>
+              <p>Talking about gender for most people is the equivalent of fish talking about water.
+                Cender is so much the routine ground of everyday activities that questioning its
+                taken-far-granted assumptions and presuppositions is like thinking about whether
+                the sun will come up. Gender is so pervasive that in our society we assume it is
+                bred into our genes. Most people find it hard to believe that gender is constantly
+                created and re-created out of human interaction, out of social life, and is the texture
+                and order of that social life. Yet gender, like culture, is a human production that depends on everyone constantly "doing gender" (West and 'Zimmerman 1987)...</p>
+              <p><a href="pdf/LORBER-NightToHisDay-SocialConstructionofGender.pdf" target="_blank" class="w3-button w3-black"><i class="fa fa-info-circle"></i> Read More</a></p>
+            </div>
+            <div class="w3-col s6 w3-center">
+                <img src="img/judith-lorber.jpg" alt="Judith Lorber" width="600px" height="600px">
+            </div>
+          </div>
+    </div>
+
+    <div class="w3-container w3-white w3-center" id="read2" style="padding-top: 5%;">
+        <div class="w3-row">
+            <div class="w3-col s6 w3-center">
+              <h2 class="pink-title">Girl</h2>
+              <h5><a href="https://www.britannica.com/biography/Jamaica-Kincaid" target="_blank">Jamaica Kincaid</a></h5>
+              <p>Wash the white clothes on Monday and put them on the stone heap; wash the color clothes on Tuesday and put them on the clothesline to dry; 
+                don’t walk bare-head in the hot sun; cook pumpkin fritters in very hot sweet oil; soak your little cloths right after you take them off; when buying 
+                cotton to make yourself a nice blouse, be sure that it doesn’t have gum in it, because that way it won’t hold up well after a wash; 
+                soak salt fish overnight before you cook it; is it true that you sing benna in Sunday school?;...</p>
+              <p><a href="pdf/Girl by Jamaica Kincaid.pdf" target="_blank" class="w3-button w3-black"><i class="fa fa-info-circle"></i> Read More</a></p>
+            </div>
+            <div class="w3-col s6 w3-center">
+                <img src="img/jamaica-kincaid.jpg" alt="Jamaica Kincaid" width="600px" height="600px">
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-white w3-center" id="read3" style="padding-top: 5%;">
+        <div class="w3-row">
+            <div class="w3-col s6 w3-center">
+              <h2 class="pink-title">Just One of the Guys?<br>
+                How Transmen Make Gender Visible at Work</h2>
+              <h5><a href="https://sociology.uchicago.edu/directory/Kristen-Schilt" target="_blank">Kristen Schilt</a></h5>
+              <p>This article examines the reproduction of gendered workplace inequalities through in-depth inter
+                views with female-to-male transsexuals (FTMs). Many FTMs enter the workforce as women and then
+                transition to become men, an experience that can provide them with an "outsider-within " perspective
+                on the "patriarchal dividend"?the advantages men in general gain from the subordination of women.
+                Many of the respondents in this article find themselves, as men, receiving more authority, reward, and
+                respect in the workplace than they received as women, even when they remain in the same jobs. The
+                author argues that their experiences can make the underpinnings of gendered workplace disparities
+                visible and help illuminate how structural disadvantages for women are reproduced in workplace
+                interactions. As tall, white FTMs see more advantages than short FTMs and FTMs of color, these
+                experiences also illustrate how men's gender advantages at work vary with characteristics such as
+                race/ethnicity and body structure....</p>
+              <p><a href="pdf/Schilt-OneGuysTransmen-2006.pdf" target="_blank" class="w3-button w3-black"><i class="fa fa-info-circle"></i> Read More</a></p>
+            </div>
+            <div class="w3-col s6 w3-center">
+                <img src="img/kristin-shilt.jpg" alt="Kristen Schilt" width="600px" height="600px">
+            </div>
+          </div>
+    </div>
+
+    <!-- Videos -->
+    <div class="w3-container w3-white w3-center" id="vid1" style="padding-top: 5%;">
+      <div class="w3-pink w3-round-xlarge">
+        <h1 class="w3-text-black info-title">Videos</h1>
+      </div>
+        <div class="w3-row">
+            <div class="w3-col s6 w3-center">
+              <h2 class="pink-title">The Origin of Gender</h2>
+              <h5><a href="https://www.youtube.com/@pbsorigins" target="_blank">PBS Origins</a></h5>
+            </div>
+            <div class="w3-col s6 w3-center">
+              <iframe src="https://www.youtube.com/embed/5e12ZojkYrU?si=Ylbss5LGQH-1mX7w" title="YouTube video player" frameborder="0" width="600px" height="600px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-white w3-center" id="vid2" style="padding-top: 5%;">
+        <div class="w3-row">
+            <div class="w3-col s6 w3-center">
+              <h2 class="pink-title">What We Know About Gender Identity According to Science</h2>
+              <h5><a href="https://www.youtube.com/@Seeker" target="_blank">Seeker</a></h5>
+            </div>
+            <div class="w3-col s6 w3-center">
+              <iframe src="https://www.youtube.com/embed/XMRlqaY6eVU?si=iajc-v5-j86Mgt_D" title="YouTube video player" frameborder="0" width="600px" height="600px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-white w3-center" id="vid3" style="padding-top: 5%;">
+        <div class="w3-row">
+            <div class="w3-col s6 w3-center">
+              <h2 class="pink-title">Women vs Men, In the workplace</h2>
+              <h5><a href="https://www.youtube.com/@trtworld" target="_blank">TRT World</a></h5>
+            </div>
+            <div class="w3-col s6 w3-center">
+              <iframe src="https://www.youtube.com/embed/4GLT8JGO_B4?si=kcpX3SEnbMg5i6eQ" title="YouTube video player" frameborder="0" width="600px" height="600px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+    </div>
+
+    <!-- Games -->
+    <div class="w3-container w3-white w3-center" id="game1" style="padding-top: 5%;">
+      <div class="w3-pink w3-round-xlarge">
+      <h1 class="w3-text-black info-title">Games</h1>
+      </div>
+        <div class="w3-row">
+            <div class="w3-col s6 w3-center">
+              <h2 class="pink-title">Dys4ia</h2>
+              <h5><a href="https://w.itch.io/" target="_blank">Anna Anthropy</a></h5>
+              <p><a href="https://www.digiart21.org/art/dys4ia" target="_blank" class="w3-button w3-black"><i class="fa fa-info-circle"></i> Learn More</a></p>
+            </div>
+            <div class="w3-col s6 w3-center">
+              <iframe src="https://freegames.org/dys4ia/#" title="Dys4ia" width="600px" height="600px" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-white w3-center" id="game2" style="padding-top: 5%;">
+        <div class="w3-row">
+            <div class="w3-col s6 w3-center">
+              <h2 class="pink-title">The Ideal World</h2>
+              <h5>Discover your identity within the ideal society.</h5>
+              <p>Describing gender as a social construct is neither a casual nor an ideological phrasing. Many people might be happier and less anxious if they could go through life without having to worry about whether their gender was affecting other people’s perceptions of them or their ability to pursue their goals, or without feeling doubts about whether they were living up to the expectations placed on them because of their sexual characteristics. Unfortunately, socially-constructed concepts of gender can hinder people in all of these ways.</p>
+              <p><a href="https://blogs.scientificamerican.com/observations/its-time-for-a-world-without-gender/" target="_blank" class="w3-button w3-black"><i class="fa fa-info-circle"></i> Learn More</a></p>
+            </div>
+            <div class="w3-col s6 w3-center" data-tf-live="01HG9AKW607G0D9VJYM6AM35ZJ" title="The Ideal World" style="width:600px !important; height: 600px !important; padding-left: 5%;" allowfullscreen>
+            <script src="//embed.typeform.com/next/embed.js"></script>
+        </div>
+    </div>
+
+    <div class="w3-container w3-white w3-center" id="game3" style="padding-top: 5%;">
+        <!-- Game 3 content tbd -->
+            <!--<div class="w3-row">
+                <div class="w3-col s6 w3-center">
+                    <h2 class="pink-title">Neutrios</h2>
+                    <h5><a href="https://itch.io/profile/erzasilva" target="_blank">erzasilva</a></h5>
+                    <p><a href="https://erzasilva.itch.io/its-a-womanss-world" target="_blank" class="w3-button w3-black"><i class="fa fa-info-circle"></i> Learn More</a></p>
+                </div>
+                <div class="w3-col s6 w3-center">
+                    <embed src = "Its a Wo(man)s World_Windows/Its a Wo(man)s World.exe" type ="application/octet-stream" title="Neutrois" width="560" height="400" allowfullscreen>
+                </div>
+            </div>-->
+        </div>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-blacks">
+  <div class="sticky w3-container">
+  <a href="#home" class="w3-row w3-left w3-button w3-black"><i class="fa fa-arrow-up"></i> To the top</a>
+  </div>
+  <div class="w3-row w3-center w3-xxlarge w3-section">
+    <a href="https://www.instagram.com/spelman_studio/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/janespelman/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+ <p class="w3-row w3-medium w3-center">&copy; 2023 <a href="https://spelmanstudio.com/" target="_blank">Spelman Studio</a> - All Rights Reserved</p>
+</footer>
+
+<script>
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+        } else {
+            mySidebar.style.display = 'block';
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GenderTech</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-card navbar" id="myNavbar">
+    <a href="index.html#home" class="w3-bar-item w3-button w3-wide logo">GT</a>
+    <!-- Right-sided navbar links -->
+    <div class="navbar w3-right w3-hide-small">
+      <a href="index.html#home" class="w3-bar-item w3-button" :hover>Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Articles 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="info.html#read1" class="w3-bar-item w3-button" style="overflow:hidden;">"Night to His Day": The Social Construction of Gender</a>
+          <a href="info.html#read2" class="w3-bar-item w3-button" style="overflow:hidden;">Girl</a>
+          <a href="info.html#read3" class="w3-bar-item w3-button" style="overflow:hidden;">Just One of the Guys? How Transmen Make Gender Visible at Work</a>
+        </div>
+      </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Videos 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="info.html#vid1" class="w3-bar-item w3-button" style="overflow:hidden;">The Origin of Gender</a>
+        <a href="info.html#vid2" class="w3-bar-item w3-button" style="overflow:hidden;">What We Know About Gender Identity According to Science</a>
+        <a href="info.html#vid3" class="w3-bar-item w3-button" style="overflow:hidden;">Women vs Men, In the workplace</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Games 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="info.html#game1" class="w3-bar-item w3-button" style="overflow:hidden;">Dys4ia</a>
+        <a href="info.html#game2" class="w3-bar-item w3-button" style="overflow:hidden;">The Ideal World</a>
+      </div>
+    </div> 
+    <a href="citations.pdf" class="w3-bar-item w3-button" target="_blank" :hover>Sources</a>
+</div>
+</div>
+</div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">x</a>
+  <a href="index.html#home" class="w3-bar-item w3-button" :hover>Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Articles 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="info.html#read1" class="w3-bar-item w3-button" style="overflow:hidden;">"Night to His Day": The Social Construction of Gender</a>
+          <a href="info.html#read2" class="w3-bar-item w3-button" style="overflow:hidden;">Girl</a>
+          <a href="info.html#read3" class="w3-bar-item w3-button" style="overflow:hidden;">Just One of the Guys? How Transmen Make Gender Visible at Work</a>
+        </div>
+      </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Videos 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="info.html#vid1" class="w3-bar-item w3-button" style="overflow:hidden;">The Origin of Gender</a>
+        <a href="info.html#vid2" class="w3-bar-item w3-button" style="overflow:hidden;">What We Know About Gender Identity According to Science</a>
+        <a href="info.html#vid3" class="w3-bar-item w3-button" style="overflow:hidden;">Women vs Men, In the workplace</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Games 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="info.html#game1" class="w3-bar-item w3-button" style="overflow:hidden;">Dys4ia</a>
+        <a href="info.html#game2" class="w3-bar-item w3-button" style="overflow:hidden;">The Ideal World</a>
+      </div>
+    </div>
+    <a href="citations.pdf" class="w3-bar-item w3-button" target="_blank" :hover>Sources</a>
+    </div>
+  </div> 
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-black" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">GenderTech</span><br>
+    <span class="w3-large">Description</span>
+    <p><a href="info.html" class="body-button w3-button w3-padding-large w3-large w3-margin-top" :hover>Learn more</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-black w3-xxlarge" style="padding:16px 16px">
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:50px 16px" id="about">
+  <h2 class="w3-center pink-title">ABOUT GENDER</h2>
+  <p class="w3-center w3-large">What is it?</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-venus-mars w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Sex</p>
+      <p>All humans are born with biological characteristics of sex, either male, female, or intersex.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-transgender-alt w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Gender</p>
+      <p>Gender, however, is a social construct and generally based on the norms, behaviors, and societal roles expected of individuals based primarily on their sex.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-intersex w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Identity</p>
+      <p>Gender identity describes a person’s self-perceived gender, which could be male, female, or otherwise.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-neuter w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Continuum</p>
+      <p>Gender continuum, in the study of human sexuality, the thesis that gender is not “binary,” or limited to the specific genders “man” and “woman” (or “boy” and “girl”), but continuous, forming a spectrum.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Creator Section -->
+<div class="w3-container" style="padding:50px 16px" id="team">
+  <h2 class="w3-center pink-title">THE CREATOR</h2>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col m12">
+      <div class="w3-center">
+        <a href="https://www.linkedin.com/in/janespelman/" target="_blank"><img src="img/jane-headshot.jpg" alt="Jane" style="width:60%"></a>
+        <div class="w3-container">
+          <h2>Jane Spelman</h2>
+          <h4 class="w3-opacity">ETBD</h4>
+          <p>Jane Spelman is a Freelance Website Designer for Spelman Studio, a Marketing Consultant for Delaware Area Career Center, 
+            and works in Communications for the Miami University College of Creative Arts and Sciences with certifications in 
+            Adobe Illustrator, Photoshop, and Premiere. She also has skills in software such as Canva, Buffer, Trello, and much more. 
+            She completed the Digital Design program at Delaware Area Career Center and graduated from Olentangy Berlin High School. 
+            They are attending Miami University for its Emerging Technology in Business and Design major. She is passionate about expressing 
+            creativity while excelling in the technological world and leading teams to success through strong communication skills and project organization.</p>
+          <p><a href="#contact"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-black w3-padding-64">
+  <div class="w3-quarter">
+    <h4>Women earn</h4>
+    <h2 class="pink-title">$0.82</h2>
+    <h4>for every $1 earned by men</h4>
+  </div>
+  <div class="w3-quarter">
+    <h4>Women make up</h4>
+    <h2 class="pink-title">12.5%</h2>
+    <h4>of all millionaires in the world</h4>
+  </div>
+  <div class="w3-quarter">
+    <h4>Homicide is the</h4>
+    <h2 class="pink-title">4th</h2>
+    <h4>leading cause of death for women</h4>
+  </div>
+  <div class="w3-quarter">
+    <h4>In 2022</h4>
+    <h2 class="pink-title">39,255</h2>
+    <h4>men committed suicide</h4>
+  </div>
+</div>
+
+<!-- Gallery Section -->
+<div class="w3-container" style="padding:50px 16px" id="gallery">
+  <h2 class="w3-center pink-title">GALLERY</h2>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="img/gender9.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="alt">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="img/gender2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="alt">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="img/gender8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="alt">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="img/gender5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="alt">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="img/gender11.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="alt">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="img/gender7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="alt">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="img/gender.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="alt">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="img/gender10.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="alt">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-white w3-center" style="padding:20px 5px;">
+  <h2 class="w3-center pink-title" id="contact">CONTACT</h2>
+  <div>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>Phone: (614) 758-3448</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i>Email: janespelmanstudio@gmail.com</p>
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Oxford, OH, USA</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49252.54283948385!2d-84.7829676806068!3d39.508081102275064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88403d0e27bb9233%3A0x694f077b0f7aafcc!2sOxford%2C%20OH%2045056!5e0!3m2!1sen!2sus!4v1701289850378!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="w3-container input w3-text-white" style="margin-right:200px; margin-left:200px;">
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-round-xlarge w3-text-black w3-pink" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-round-xlarge w3-text-black w3-pink" type="email" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-round-xlarge w3-text-black w3-pink" type="tel" placeholder="Phone" required name="Phone"></p>
+      <p><input class="w3-input w3-round-xlarge w3-text-black w3-pink" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    </div>
+    </div>
+    </div>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-blacks">
+  <div class="sticky w3-container">
+  <a href="#home" class="w3-row w3-left w3-button w3-black"><i class="fa fa-arrow-up"></i> To the top</a>
+  </div>
+  <div class="w3-row w3-center w3-xxlarge w3-section">
+    <a href="https://www.instagram.com/spelman_studio/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/janespelman/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+ <p class="w3-row w3-medium w3-center">&copy; 2023 <a href="https://spelmanstudio.com/" target="_blank">Spelman Studio</a> - All Rights Reserved</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
