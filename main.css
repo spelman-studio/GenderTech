@@ -1,314 +1,264 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-html {
-  overflow: scroll;
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway", sans-serif
 }
+html {
+	overflow: scroll;
+}
+body, html {
+	height: 100%;
+	line-height: 1.8;
+	background-color: white;
+	color: black;
+}
+a {
+	text-decoration: none;
+}
+.w3-input {
+	border: solid .05rem #000 !important;
+}
+/* Full height image header */
 
-    body, html {
-      height: 100%;
-      line-height: 1.8;
-      background-color: white;
-      color: black;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    .w3-input {
-      border: solid .05rem #000 !important;
-    }
-
-    /* Full height image header */
-    .bgimg-1 {
-      background-position: center;
-      background-size: cover;
-      background-image: url("img/gender3.jpg");
-      min-height: 100%;
-    }
-
-    .body-button {
-      background-color: black;
-      color: white;
-      padding: 16px;
-      text-decoration: none;
-    }
-
-    h5 a:hover {
-      opacity: 0.5;
-      text-decoration: none;
-    }
-
-    p a:hover {
-      opacity: 0.5;
-      text-decoration: none;
-    }
-
-    .w3-bar .w3-button {
-      padding: 16px;
-      color: white;
-      background-color: inherit;
-    }
-
-    .body-button :hover {
-      background-color: #fc89ac !important;
-      color: black !important;    
-    }
-
-    .navbar {
-        overflow: hidden;
-        background-color: #000;
-      }
-      
-      .navbar a {
-        float: left;
-        font-size: 16px;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-      
-      .dropdown {
-        float: left;
-        overflow: hidden;
-      }
-      
-      .dropdown .dropbtn {
-        font-size: 16px;  
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: black;
-        font-family: inherit;
-        margin: 2;
-      }
-      
-      .navbar a:hover, .dropdown:hover .dropbtn {
-        background-color: #fc89ac !important;
-        color: black;
-      }
-      
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: black;
-        color: white;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-      
-      .dropdown-content a {
-        float: inherit;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-      }
-      
-      .dropdown-content a:hover {
-        background-color: #fc89ac !important;
-        width: 100%;
-      }
-      
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-      .w3-hover-opacity {
-        cursor: pointer;
-      }
-
-      .pink-title {
-        color: #fc89ac;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      .info-title {
-        color: #000;
-        font-weight: bolder;
-        text-decoration: none;
-      }
-
-      .title-box {
-        overflow: hidden;
-      }
-
-      hr {
-        width: 100%;
-        border: 1px solid black;
-        
-      }
-
-      .img-container {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-      }
-      
-      .img-container::after {
-        display: block;
-        content: "";
-        padding-top: 100%;
-      }
-      
-      .img-container img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      .youtube-video-container {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-      }
-      
-      .youtube-video-container::after {
-        display: block;
-        content: "";
-        padding-top: 56.25%;
-      }
-      
-      .youtube-video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      .game1-container {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-      }
-
-      .game1-container::after {
-        display: block;
-        content: "";
-        padding-top: 100%;
-      }
-      
-      .game1-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      .game2-container {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-      }
-
-      .game2-container script{
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      .game-container script {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      .w3-text-pink {
-        color: #fc89ac !important;
-      }
-
-      .w3-pink {
-        background-color: #fc89ac !important;
-      }
-
-      .w3-input {
-        border: 1px solid #fc89ac;
-
-      }
-
-      .w3-col {
-        width: 100%;
-        padding: 8px;
-        float: center !important;
-    }
-
-    .w3-half {
-      float: center !important;
-    }
-
-    .w3-row-padding {
-        margin: 0 -8px;
-    }
-
-    .w3-sidebar {
-        width: 100%;
-        height: 100%;
-        display: none;
-        z-index: 1;
-        overflow: hidden;
-        position: auto;
-    }
-
-    .w3-bar-block {
-        width: 100%;
-    }
-
-    .w3-main {
-        margin-left: 0;
-    }
-
-    @media only screen and (max-width: 600px) {
-        .w3-sidebar {
-            display: block;
-        }
-
-        .w3-main {
-            margin-left: 0;
-        }
-    }
-
-    ::placeholder {
-      color: #000;
-    }
-
-      .game2 {
-        width: 560 !important;
-        height: 400 !important;
-      }
-
-      .gameWrapper {
-        position: auto;
-      /* 	padding-bottom: 56.25%; */
-      /* 	padding-top: 25px; */
-      /* 	height: 0; */
-      /*   max-width: 60%; */
-        width: 80%;
-        height: 70%;
-      }
-
-      .gameWrapper iframe {
-        width: 100%;
-        height: 100%;
-      }
-
-      div.sticky {
-        position: -webkit-sticky; /* Safari */
-        position: sticky;
-        top: 0;
-      }
+.bgimg-1 {
+	background-position: center;
+	background-size: cover;
+	background-image: url("img/gender3.jpg");
+	min-height: 100%;
+}
+.body-button {
+	background-color: black;
+	color: white;
+	padding: 16px;
+	text-decoration: none;
+}
+h5 a:hover {
+	opacity: 0.5;
+	text-decoration: none;
+}
+p a:hover {
+	opacity: 0.5;
+	text-decoration: none;
+}
+.w3-bar .w3-button {
+	padding: 16px;
+	color: white;
+	background-color: inherit;
+}
+.body-button :hover {
+	background-color: #fc89ac !important;
+	color: black !important;
+}
+.navbar {
+	overflow: hidden;
+	background-color: #000;
+}
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+.dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: black;
+	font-family: inherit;
+	margin: 2;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: #fc89ac !important;
+	color: black;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: black;
+	color: white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+.dropdown-content a {
+	float: inherit;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	width: 100%;
+}
+.dropdown-content a:hover {
+	background-color: #fc89ac !important;
+	width: 100%;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.w3-hover-opacity {
+	cursor: pointer;
+}
+.pink-title {
+	color: #fc89ac;
+	text-decoration: none;
+	font-weight: bold;
+}
+.info-title {
+	color: #000;
+	font-weight: bolder;
+	text-decoration: none;
+}
+.title-box {
+	overflow: hidden;
+}
+hr {
+	width: 100%;
+	border: 1px solid black;
+}
+.img-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.img-container::after {
+	display: block;
+	content: "";
+	padding-top: 100%;
+}
+.img-container img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.youtube-video-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.youtube-video-container::after {
+	display: block;
+	content: "";
+	padding-top: 56.25%;
+}
+.youtube-video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.game1-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.game1-container::after {
+	display: block;
+	content: "";
+	padding-top: 100%;
+}
+.game1-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.game2-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.game2-container script {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+.game-container script {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+.w3-text-pink {
+	color: #fc89ac !important;
+}
+.w3-pink {
+	background-color: #fc89ac !important;
+}
+.w3-input {
+	border: 1px solid #fc89ac;
+}
+.w3-col {
+	width: 100%;
+	padding: 8px;
+	float: center !important;
+}
+.w3-half {
+	float: center !important;
+}
+.w3-row-padding {
+	margin: 0 -8px;
+}
+.w3-sidebar {
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 1;
+	overflow: hidden;
+	position: auto;
+}
+.w3-bar-block {
+	width: 100%;
+}
+.w3-main {
+	margin-left: 0;
+}
+@media only screen and (max-width: 600px) {
+	.w3-sidebar {
+		display: block;
+	}
+	.w3-main {
+		margin-left: 0;
+	}
+}
+::placeholder {
+	color: #000;
+}
+.game2 {
+	width: 560 !important;
+	height: 400 !important;
+}
+.gameWrapper {
+	position: auto;
+	/* 	padding-bottom: 56.25%; */
+	/* 	padding-top: 25px; */
+	/* 	height: 0; */
+	/*   max-width: 60%; */
+	width: 80%;
+	height: 70%;
+}
+.gameWrapper iframe {
+	width: 100%;
+	height: 100%;
+}
+div.sticky {
+	position: -webkit-sticky;
+	/* Safari */
+	position: sticky;
+	top: 0;
+}
