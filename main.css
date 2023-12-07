@@ -186,13 +186,29 @@ hr {
 	width: 100%;
 	height: 100%;
 }
-.game-container script {
+.game3-container {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	border: #fc89ac 2px solid;
+	border-radius: 10%;
+	background-color: #fcebf0;
+}
+.game3-container .panel {
 	position: absolute;
 	top: 0;
 	left: 0;
-	bottom: 0;
 	width: 100%;
 	height: 100%;
+}
+input {
+	margin-right: 10px;
+}
+.options {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;;
 }
 .w3-text-pink {
 	color: #fc89ac !important;
